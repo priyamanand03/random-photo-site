@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private Portal</title>
+</head>
+<body>
+  <h2>Enter Password</h2>
+  <form onsubmit="return checkPassword()">
+    <input type="password" id="password" placeholder="Password">
+    <button type="submit">Enter</button>
+  </form>
+
+  <script>
+    function checkPassword() {
+      const input = document.getElementById("password").value;
+      const secret = "PriyamSecret123"; // your chosen password
+      if (input === secret) {
+        window.location.href = "index.html"; // your main site
+        return false;
+      } else {
+        alert("Wrong password!");
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
