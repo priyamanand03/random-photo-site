@@ -2,3 +2,8 @@
 const photos = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
 const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
 document.querySelector("img").src = randomPhoto;
+const photos = ["photo1.jpg", "photo2.jpg", "photo3.jpg"];
+function showRandomPhoto() {
+  const randomPhoto = photos[Math.floor(Math.random() * photos.length)];
+  document.getElementById("random-photo").src = randomPhoto;
+}
